@@ -1,0 +1,512 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: tahoma;
+    }
+
+    .container {
+      height: 100vh;
+      width: 100%;
+    }
+
+    header {
+      height: 8vh;
+      width: 100%;
+      background-color: #e63946;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 12px;
+    }
+
+    header ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+    }
+
+    .logo {
+      width: 60px;
+      cursor: pointer;
+    }
+
+    header ul li {
+      margin: 0 15px;
+      cursor: pointer;
+    }
+
+    .utilities {
+      display: flex;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    .utilities :first-child {
+      cursor: pointer;
+    }
+
+    .location {
+      /* width: 10px; */
+      height: 20px;
+      margin-left: 7px;
+    }
+
+    select {
+      text-decoration: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 12px;
+      cursor: pointer;
+    }
+
+    .profile {
+      width: 35px;
+      cursor: pointer;
+    }
+
+    main {
+      height: 75vh;
+      width: 100%;
+      background-color: #c1121f;
+      position: relative;
+    }
+
+    .left-img {
+      height: 400px;
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+    }
+
+    .right-img {
+      height: 450px;
+      position: absolute;
+      bottom: 0;
+      right: 30px;
+    }
+
+    .center-section {
+      position: absolute;
+      bottom: 199px;
+      left: 157px;
+      color: white;
+      text-align: center;
+    }
+
+    input {
+      padding: 17px 0px;
+      padding-left: 12px;
+      margin-right: -5px;
+    }
+
+    input:last-child {
+      padding: 18px 0;
+    }
+
+    p {
+      margin: 15px;
+    }
+
+    .building-icon {
+      height: 28px;
+      padding: 20px 0;
+      position: absolute;
+      bottom: -5px;
+      left: 3px;
+      opacity: 0.5;
+    }
+
+    .to-building-icon {
+      height: 28px;
+      padding: 20px 0;
+      position: absolute;
+      bottom: -5px;
+      left: 185px;
+      opacity: 0.5;
+    }
+
+    .exchange {
+      height: 28px;
+      padding: 10px 0;
+      background-color: white;
+      position: absolute;
+      bottom: 3px;
+      left: 160px;
+    }
+
+    .onward-date {
+      height: 28px;
+      padding: 10px 0;
+      background-color: white;
+      position: absolute;
+      bottom: 3px;
+      left: 355px;
+      opacity: 0.5;
+    }
+
+    .return-date {
+      height: 28px;
+      padding: 10px 0;
+      background-color: white;
+      position: absolute;
+      bottom: 3px;
+      left: 530px;
+      opacity: 0.5;
+    }
+
+    .search {
+      padding: 18px 0px;
+      border: none;
+      background-color: #e63946;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .offer-section {
+      background-color: white;
+      height: 22%;
+      width: 48%;
+      position: absolute;
+      left: 276px;
+      bottom: 45px;
+      box-shadow: 3px 3px 6px #8d99ae;
+
+    }
+
+    .grand-logo {
+      width: 110px;
+    }
+
+    .offer-text {
+      position: absolute;
+      top: 30px;
+      left: 130px;
+    }
+
+    h3 {
+      margin-left: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <ul>
+          <img src="assets/logo.png" class="logo">
+          <li>BUS TICKET</li>
+          <li>HOTELS</li>
+          <li>BUS HIRE</li>
+          <li>PILGRIMAGES</li>
+          <li>CARS<sup>Outstation</sup></li>
+        </ul>
+      </nav>
+      <div class="utilities">
+        <div>Help</div>
+        <img src="assets/location.png" class="location">
+        <select>
+          <option>Indore</option>
+          <option>Chennai</option>
+        </select>
+
+        <select>
+          <option>Manage Booking</option>
+        </select>
+        <img src="assets/profile.png" class="profile">
+
+        <select>
+          <option></option>
+        </select>
+        </i>
+      </div>
+    </header>
+    <main>
+      <img src="assets/img.png" class="left-img">
+      <img src="assets/alluarjun.png" class="right-img">
+
+      <div class="center-section">
+        <h1>Stop Looking. Start Tracking!</h1>
+        <p>Track your bus live with the redBus app</p>
+        <div class="input-section">
+          <img src="assets/building-icon.png" class="building-icon"></img>
+          <input type="text" placeholder="    FROM" />
+          <img src="assets/to-building-icon.png" class="to-building-icon"></img>
+          <img src="assets/exchange.png" class="exchange">
+          <input type="text" placeholder="      TO">
+          <img src="assets/calendar.jpg" class="onward-date">
+          <input type="datetime" placeholder="     ONWARD DATE">
+          <img src="assets/calendar.jpg" class="return-date">
+          <input type="datetime" placeholder="      RETURN DATE">
+          <input type="search" class="search" value="Search Buses" readonly />
+        </div>
+      </div>
+    </main>
+    <div class="offer-section">
+      <img src="assets/grand_logo.png" class="grand-logo">
+      <div class="offer-text">
+        <h3>SAVE UPTO 375 ON BUS TICKETS</h3>
+        <P>Use code FIRST | Applicable only on App for first booking</P>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html> -->
+
+
+
+
+<!-- -----------------------------XXXX--------------------------------->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  font-family: Helvetica;
+}
+
+header {
+  height: 20vh;
+  background-color: #4f518c;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  justify-content: center;
+}
+
+.logo {
+  margin-right: 450px;
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-section {
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+.email {
+  top: 5px;
+}
+
+.password {
+  margin: 0 5px;
+}
+
+.login-section,
+input {
+  margin-bottom: 25px;
+  padding: 5px;
+}
+
+.for-pass {
+  position: absolute;
+  top: 37px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+label {
+  position: absolute;
+  top: -8px;
+}
+
+button {
+  border: 1px solid black;
+  background-color: #3a0ca3;
+  color: white;
+  padding: 3px 7px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+section {
+  height: 80vh;
+  background-image: linear-gradient(rgb(252, 252, 252), rgb(213, 213, 231));
+  display: flex;
+}
+.left-section {
+  width: 60%;
+  padding: 20px 150px 70px 150px;
+}
+.left-section, .tag{
+  font-size: 27px;
+  color: blue;
+}
+.right-section {
+  width: 40%;
+}
+.right-section,
+h1 {
+  font-size: 2.3rem;
+  margin: -25px 0 -40px 0;
+}
+.right-section,
+h6 {
+  font-size: 1.3rem;
+  margin-top: 45px;
+}
+.input-section {
+  /* border: 1px solid black; */
+  margin: -55px 0 25px 0;
+  padding: 5px 0;
+  height: 182px;
+}
+.name {
+  width: 65%;
+  height: 38px;
+  display: flex;
+}
+.name,
+.fname {
+  width: 65%;
+  margin-right: 4px;
+  padding: 18px 0;
+}
+.name,
+.lname {
+  width: 65%;
+  padding: 18px 0;
+}
+#email {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 5px;
+  /* margin-bottom: 25px; */
+}
+#password {
+  width: 60%;
+  padding: 10px;
+  margin-top: 12px;
+}
+h4 {
+}
+.dob {
+  display: flex;
+  padding: -22px;
+  height: 35px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 0px;
+  padding: 22px 0;
+}
+.gender {
+  padding: 15px;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <p class="logo">facebook</p>
+
+        <div class="login-section">
+            <div class="email">
+                <label>Email or Phone</label><br>
+                <input type="text">
+            </div>
+            <div class="password">
+                <label>Password</label><br>
+                <input type="password"><br>
+                <p class="for-pass">Forgotten acount?</p>
+            </div>
+            <button>Log In</button>
+        </div>
+    </header>
+
+    <section>
+        <div class="left-section">
+            <p class="tag">Facebook helps you connect and share with the people in your life</p>
+            <img src="assets/facebook.png" alt="image not found">
+        </div>
+
+        <div class="right-section">
+            <h1>Create an account</h1>
+            <h6>It's free and always will be.</h6>
+
+            <div class="input-section">
+                <div class="name">
+                    <input class="fname" type="text" placeholder="First Name">
+                    <input class="lname" type="text" placeholder="Surname">
+                </div>
+                <input id="email" type="text" placeholder="Mobile number or email address"><br>
+                <input id="password" type="password" placeholder="New password">
+            </div>
+
+            <h5>Birthday</h5>
+            <div class="dob">
+                <select value="Day">
+                    <option value="15">15</option>
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="05">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                </select>
+                <select>
+                    <option value="05">September</option>
+                    <option value="05">October</option>
+                    <option value="05">November</option>
+                    <option value="05">December</option>
+                    <option value="01">January</option>
+                    <option value="02">Fabruary</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="05">June</option>
+                    <option value="05">July</option>
+                    <option value="05">August</option>
+                </select>
+                <select value="Day">
+                    <option value="01">1993</option>
+                    <option value="01">1998</option>
+                    <option value="02">1999</option>
+                    <option value="03">2000</option>
+                    <option value="04">2001</option>
+                    <option value="05">2002</option>
+                </select>
+                <div>
+                    <a href="#">Why do I need to provide my</a><br>
+                    <a href="#">date of birth?</a>
+                </div>
+            </div>
+            <div class="gender">
+                <input type="radio" name="gender">Male
+                <input type="radio" name="gender">Female
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

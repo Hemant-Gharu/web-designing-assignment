@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Travel reservation form</h1>
+    <form>
+        <h3>*demotes mendetory</h3>
+        <div>
+            <label required>Full Name*:</label><br>
+            <input type="text" placeholder="FirstName LastName" required><br>
+        </div>
+        <div>
+            <label>Email address*: </label><br>
+            <input type="email" placeholder="EMAIL_ADDRESS" required><br>
+        </div>
+        <div>
+            <label>Select Tour Package*:</label><br>
+            <select required>
+                <option>Goa</option>
+                <option>Shimla</option>
+                <option>Shri Nagar</option>
+            </select>
+        </div>
+        <div>
+            <label>Arrival date*:</label><br>
+            <input type="text" placeholder="m/d/y " required><br>
+        </div>
+        <label>Number of persons*:</label><br>
+        <input type="number" placeholder="UNKNOWN_TYPE" required><br>
+        <br>
+        <div>
+            <label required>What would you want to avail ?*</label><br>
+            Boarding <input type="checkbox"><br>
+            Fooding<input type="checkbox"><br>
+            Sight seeing<input type="checkbox">
+        </div>
+        <div>
+            <label>Discount Coupon Code:</label><br>
+            <input type="text" placeholder="UNKNOWN_TYPE">
+        </div>
+        <div>
+            <label>Terms and conditions*</label><br>
+            <input type="radio" name="tc" required />I agree
+            <input type="radio" name="tc" required />I disagree
+        </div>
+        <button type="submit">Complete reservation</button>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        table {
+            border: 1px solid gray;
+            border-right: 2px solid black;
+            border-bottom: 2px solid black;
+            width: 50%;
+            margin: 10px;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Task 1: -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Reg. ID</th>
+                <th>Name</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Achilles</td>
+                <td>Adventures</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Acid Labyrinth</td>
+                <td>Time management</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Air Battle</td>
+                <td>Cooking</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Angel Bothorius</td>
+                <td>Racing</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Ashtons Family Resort</td>
+                <td>Fashion</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Batmans Gotham Dark Night</td>
+                <td>Parking</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Blueshift</td>
+                <td>Romance</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Captain USA</td>
+                <td>Sports</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Crash Bandicoot</td>
+                <td>Shooting</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Damnation</td>
+                <td>Puzzles</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        table {
+            width: 60%;
+            text-align: center;
+        }
+
+        th {
+            padding: 10px 20px;
+            border-bottom: 3px solid greenyellow;
+        }
+
+        .darkBg {
+            background-color: #264653;
+            color: white;
+            border-spacing: 10px;
+        }
+
+        td {
+            padding: 10px 35px;
+        }
+
+        .lightBg {
+            background-color: #a8dadc;
+        }
+
+        th {
+            border-radius: 5px 5px 0 0;
+        }
+    </style>
+
+</head>
+
+<body>
+     Task 2:  
+
+    <h2>A jQuery get demo with MySQL DB and PHP</h2>
+    <p>This is where HTML table is displayed</p>
+    <p>MySQL Connected successfully <br> Connected to Database</p>
+    <table>
+        <thead>
+            <tr class="darkBg ">
+                <th>Product ID</th>
+                <th>Product</th>
+                <th>Quality</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="lightBg">
+                <td>1</td>
+                <td>Wheat</td>
+                <td>Good</td>
+                <td>200 Bags</td>
+            </tr>
+            <tr class="lightBg">
+                <td>2</td>
+                <td>Rice</td>
+                <td>Good</td>
+                <td>250 Bags</td>
+            </tr>
+            <tr class="lightBg">
+                <td>3</td>
+                <td>Sugar</td>
+                <td>Prime</td>
+                <td>200 Bags</td>
+            </tr>
+            <tr class="lightBg">
+                <td>4</td>
+                <td>Maze</td>
+                <td>Good</td>
+                <td>50 Bags</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html> 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        form {
+            border: 2px solid #adb5bd;
+            padding: 0 10px 10px 10px;
+            width: 40%;
+        }
+
+        .upper-container {
+            border: 1px solid #adb5bd;
+            position: relative;
+            padding: 20px 10px;
+        }
+
+        input {
+            margin: 10px 0;
+        }
+
+        .pos-change {
+            margin-bottom: 20px;
+            position: absolute;
+            top: -25px;
+            background-color: white;
+        }
+
+        .center-container {
+            margin-top: 10px;
+            border: 1px solid #adb5bd;
+            padding: 10px 10px;
+            position: relative;
+        }
+
+        .pos-lang {
+            position: absolute;
+            top: -27px;
+            background-color: white;
+        }
+
+        .bottom-container {
+            border: 1px solid #adb5bd;
+            margin-top: 10px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .pos-inst {
+            position: absolute;
+            top: -25px;
+            background-color: white;
+        }
+
+        textarea {
+            margin: 10px
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <h1>User Input Form</h1>
+        <div class="upper-container">
+            <p class="pos-change">Personal Particular</p>
+            <div>
+                <label>Name:</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password">
+            </div>
+            <label>Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <br>
+            <label>Age:</label>
+            <select>
+                <option>
+                    <1 year old</option>
+                <option>
+                    <2 year old</option>
+                <option>
+                    <3 year old</option>
+                <option>
+                    <4 year old</option>
+                <option>
+                    <5 year old</option>
+                <option>
+                    <6 year old</option>
+            </select>
+        </div>
+        <div class="center-container">
+            <p class="pos-lang">Languages</p>
+            <input type="checkbox">Java
+            <input type="checkbox">C/C++
+            <input type="checkbox">C#
+        </div>
+        <div class="bottom-container">
+            <p class="pos-inst">Instruction</p>
+            <textarea cols="32" rows="6" placeholder="Enter your instruction here..."></textarea>
+        </div>
+        <button>SEND</button>
+        <button>CLEAR</button>
+    </form>
+</body>
+
+</html>
